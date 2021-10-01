@@ -1,0 +1,95 @@
+@import 'utils/vars';
+@import 'utils/resets';
+
+html {
+    font-family: $mainFont;
+    font-size: $mainfontSize;
+    font-weight: $mainFontWeight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: $phoneWidth) {
+        font-size: 14px;
+        
+    }
+
+    @media screen and (min-width: $tableWidth) { 
+
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        font-size: $mainfontSize; 
+    }
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+footer {
+    margin-top: 60px;
+}
+
+section,.section {
+    position: relative;
+    padding: 40px 0;
+
+    @media screen and (min-width: $desktopWidth) {
+        padding: 20px 0;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    margin-top: 80px; 
+}
+
+.container {
+    position: relative;
+    flex: 0 0 auto;
+    margin:  0 auto;
+    width: 100%;
+    max-width: $tableWidth;
+    padding:  0 16px;
+
+    @media screen and (min-width: $lgDesktopWidth) {
+        max-width: $lgDesktopWidth;
+    }
+}
+
+.view {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import './common/_common';

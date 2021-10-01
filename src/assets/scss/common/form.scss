@@ -1,0 +1,24 @@
+form {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .form-fontrols {
+        display: flex;
+        align-items: center;
+    }
+}
+
+textarea {
+    width: 100;
+    font-size: 24px;
+    padding: 30px 27px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    border: 1px solid $white;
+    border-bottom: 1px solid #ebeef0;
+}
+
+select  {
+    width: 100%;
+    max-width: 340px;
+}
