@@ -92,4 +92,16 @@ section,.section {
     margin-right: auto;
 }
 
+.header {
+    padding: 1rem;
+    text-align: center;
+    outline: 1px solid red;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    outline: 1px solid red;
+}
+
 @import './common/_common';
